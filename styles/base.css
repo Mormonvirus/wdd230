@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
@@ -20,6 +20,12 @@ header {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
 }
 
 nav ul {
