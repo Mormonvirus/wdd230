@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 30px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        font-size: 1.5rem;
+    }
+}

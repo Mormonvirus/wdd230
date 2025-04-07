@@ -4,11 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. [Your Full Name] course assignment portal">
+    <meta name="author" content="[Your Full Name]">
+    <title>James-ann Umoh - WDD 230 - Web Frontend Development</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script defer src="scripts/getDates.js"></script>
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <header>
+        <img src="images/my-photo.jpg" alt="Profile Image" class="profile-image">
+        <span>James-ann Umoh</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li><a href="#">Activity 1</a></li>
+                <li><a href="#">Activity 2</a></li>
+                <li><a href="#">Activity 3</a></li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Information</h2>
+            <p>Weather: Placeholder</p>
+            <p>Visits: Placeholder</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> James-ann Umoh, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
