@@ -12,9 +12,12 @@ body {
 }
 
 header {
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
+
 
 .profile-image {
     width: 100px;
@@ -67,4 +70,47 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+
+
+#hamburgerMenu {
+    display: none;
+    font-size: 2rem;
+}
+
+#menuItems {
+    display: flex;
+    gap: 20px;
+}
+
+#menuItems.visible {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    #menuItems {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        background-color: #f4f4f4;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+    }
+
+    #hamburgerMenu {
+        display: block;
+    }
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header {
+    background-color: #444;
 }

@@ -8,10 +8,14 @@
     <meta name="author" content="James-ann Umoh">
     <title>James-ann Umoh - WDD 230 - Web Frontend Development</title>
 
+    <link rel="stylesheet" href="styles/normalize.css">
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 
     <script defer src="scripts/getDates.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,10 +27,14 @@
     <header>
         <img src="images/my-photo.jpg" alt="James-ann photo" class="profile-image">
         <span>James-ann Umoh</span>
+
+        <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+
+        <button id="hamburgerMenu" class="hamburger" aria-label="Open Menu">≡</button>
     </header>
 
     <nav>
-        <ul>
+        <ul id="menuItems">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="#">Site Plan</a></li>
@@ -57,6 +65,8 @@
         <p>&copy; <span id="currentYear"></span> James-ann Umoh, Nigeria</p>
         <p id="lastModified"></p>
     </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
