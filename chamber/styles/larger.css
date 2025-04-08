@@ -1,0 +1,11 @@
+/* Example for larger screens */
+@media (min-width: 768px) {
+    header nav ul {
+        display: flex;
+        text-align: center;
+    }
+
+    #hero {
+        padding: 100px 20px;
+    }
+}
