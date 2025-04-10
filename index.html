@@ -24,6 +24,7 @@
     <meta property="og:url" content="https://churchofjesuschrist.org">
 
     <script defer src="scripts/getDates.js"></script>
+    <script defer src="scripts/weather-count.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,22 +53,44 @@
     </nav>
 
     <main>
+        <div class="hero">
+            <picture class="hero-image">
+                <!-- Landscape / desktop image for wider screens -->
+                <source srcset="images/aba-temple-large.webp" media="(min-width: 600px)">
+
+                <!-- Mobile-optimized image for narrow screens -->
+                <source srcset="images/aba-temple-medium.webp" media="(max-width: 599px)">
+
+                <!-- Fallback image -->
+                <img src="images/aba-temple-small.webp" alt="aba temple image " width="960" height="540" loading="lazy"
+                    style="width: 100%; height: auto;">
+            </picture>
+        </div>
+
         <h1>WDD 230: Web Frontend Development</h1>
+        <div class="main">
 
-        <section class="card">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li><a href="#">Activity 1</a></li>
-                <li><a href="#">Activity 2</a></li>
-                <li><a href="#">Activity 3</a></li>
-            </ul>
-        </section>
+            <section class="card">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li><a href="#">Activity 1</a></li>
+                    <li><a href="#">Activity 2</a></li>
+                    <li><a href="#">Activity 3</a></li>
+                </ul>
+            </section>
 
-        <section class="card">
-            <h2>Information</h2>
-            <p>Weather: Placeholder</p>
-            <p>Visits: Placeholder</p>
-        </section>
+            <section class="card">
+                <h2>Information</h2>
+                <p id="weather">Loading weather...</p>
+                <p>You have visited this page <span id="visitCount">0</span> times.</p>
+            </section>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127223.16357192321!2d6.92239327069424!3d4.817405491177342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cea39f2c48e3%3A0x53562bdd7d8832db!2sPort%20Harcourt%2C%20Rivers!5e0!3m2!1sen!2sng!4v1744317142320!5m2!1sen!2sng"
+                width="1080" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
 
     <footer>
