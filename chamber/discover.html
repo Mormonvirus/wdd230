@@ -43,34 +43,48 @@
     </header>
 
     <main>
-        <section id="hero">
-            <img src="images/my-hero-img.jpg" alt="Chamber of Commerce Hero Image">
-            <h1>Welcome to the Chamber of Commerce</h1>
-            <p>Your connection to local businesses and community resources.</p>
-            <a href="#">Join the Chamber</a>
-        </section>
+        <div class="grid-container">
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="visit-message" id="visitMessage">Loading visit info...</div>
 
-        <section id="events">
-            <h2>Current Events</h2>
-            <p>Placeholder content for upcoming events.</p>
-        </section>
+                <h3>📅 Upcoming Events</h3>
+                <ul class="fancy-list">
+                    <li><span>🏛️ Temple Open House – May 12</span></li>
+                    <li><span>🌳 Community Picnic – June 8</span></li>
+                    <li><span>🧬 Family History Workshop – July 4</span></li>
+                </ul>
+            </aside>
 
-        <section id="weather">
-            <h2>Current Weather</h2>
-            <p>Placeholder content for weather information.</p>
-        </section>
+            <!-- MAIN CONTENT -->
+            <section class="main-content gallery">
+                <figure>
+                    <img src="images/my-hero-img.jpg" loading="lazy" alt="Scenic Temple Grounds">
+                    <figcaption>Temple Grounds at Sunset</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/my-hero-img.jpg" loading="lazy" alt="Historic Temple Interior">
+                    <figcaption>Historic Temple Interior</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/my-hero-img.jpg" loading="lazy" alt="Community Visitors Center">
+                    <figcaption>Visitors Center Events</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/my-hero-img.jpg" loading="lazy" alt="Gardens and Landscapes">
+                    <figcaption>Gardens in Bloom</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/my-hero-img.jpg" loading="lazy" alt="Evening Lights at the Temple">
+                    <figcaption>Temple at Night</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/my-hero-img.jpg" loading="lazy" alt="Family at Temple Grounds">
+                    <figcaption>Families Visiting the Grounds</figcaption>
+                </figure>
+            </section>
+        </div>
 
-        <section id="company-spotlights">
-            <h2>Company Spotlights</h2>
-            <div class="spotlight">
-                <h3>Company 1</h3>
-                <p>Placeholder content for Company 1.</p>
-            </div>
-            <div class="spotlight">
-                <h3>Company 2</h3>
-                <p>Placeholder content for Company 2.</p>
-            </div>
-        </section>
     </main>
 
     <footer>
