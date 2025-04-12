@@ -78,6 +78,31 @@ h1 {
         flex: 1;
     }
 
+    /* Discovery CSS */
+    .grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .list-view {
+        grid-template-columns: 1fr;
+    }
+
+    .member-card {
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .member-card img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .member-card div {
+        flex: 1;
+    }
+
+
 
 }
 
