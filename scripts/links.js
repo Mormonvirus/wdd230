@@ -1,39 +1,41 @@
-
 const baseURL = "https://mormonvirus.github.io/wdd230/";
 const linksURL = `${baseURL}data/links.json`;
-a
+
 async function getLinks() {
     try {
         const response = await fetch(linksURL);
+        if (!response.ok) throw new Error(await response.text());
         const data = await response.json();
-        displayLinks(data);
+        displayLinks(data.weeks);
     } catch (error) {
-        console.error("Error loading links:", error);
+        console.error("Failed to fetch links:", error);
     }
 }
 
-getLinks();
-
 function displayLinks(weeks) {
-    const activityList = document.getElementById("activityLinks");
+    const list = document.querySelector("#activityLinks");
+    list.innerHTML = ""; // clear existing content
 
-    weeks.forEach(week => {
-        const li = document.createElement("li");
-        li.textContent = `${week.week}: `;
+    weeks.forEach((week) => {
+        const weekItem = document.createElement("li");
+        weekItem.textContent = `${week.week}: `;
 
         week.links.forEach((link, index) => {
             const a = document.createElement("a");
             a.href = link.url;
             a.textContent = link.title;
 
-            li.appendChild(a);
+            weekItem.appendChild(a);
 
-
+            // Add separator if not last link
             if (index < week.links.length - 1) {
-                li.append(" | ");
+                const separator = document.createTextNode(" | ");
+                weekItem.appendChild(separator);
             }
         });
 
-        activityList.appendChild(li);
+        list.appendChild(weekItem);
     });
 }
+
+getLinks();

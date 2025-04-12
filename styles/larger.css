@@ -3,6 +3,10 @@
         font-size: 1.1rem;
     }
 
+    a {
+        color: blue;
+    }
+
     .main {
         display: grid;
         grid-template-columns: 2fr 1fr;

@@ -5,11 +5,11 @@
             "links": [
                 {
                     "url": "week01/holygrail.html",
-                    "title": "HG Layout"
+                    "title": "Holy Grail Layout"
                 },
                 {
                     "url": "week01/media-query.html",
-                    "title": "mQueries"
+                    "title": "Media Queries"
                 }
             ]
         },
@@ -17,8 +17,51 @@
             "week": "Week 2",
             "links": [
                 {
-                    "url": "week02/design-principles.html",
+                    "url": "week02/design.html",
                     "title": "Design Principles"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "HTML Tables"
+                },
+                {
+                    "url": "week04/form.html",
+                    "title": "HTML Forms"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather API"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Prophets Fetch"
                 }
             ]
         }
