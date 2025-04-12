@@ -25,3 +25,6 @@ if (!lastVisit) {
 
 // Update the latest visit date
 localStorage.setItem('lastVisit', now);
+
+// time stamp js
+document.getElementById('timestamp').value = new Date().toISOString();

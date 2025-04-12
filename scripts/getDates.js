@@ -25,3 +25,5 @@ darkModeToggle.addEventListener("click", () => {
 // Set current year and last modified date dynamically
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last modified: ${document.lastModified}`;
+
+

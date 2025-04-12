@@ -21,7 +21,7 @@ h1 {
     background-color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .hamburger {
         display: block;
     }
@@ -64,6 +64,21 @@ h1 {
     main.active {
         padding-top: 450px;
     }
+
+    /* large.css */
+    .form-layout {
+        flex-direction: row;
+    }
+
+    form {
+        flex: 2;
+    }
+
+    .membership-benefits {
+        flex: 1;
+    }
+
+
 }
 
 .grid-container {
@@ -126,6 +141,9 @@ figcaption {
     color: #555;
 }
 
+
+
+
 @media (max-width: 635px) {
 
     .photos img {
@@ -134,4 +152,6 @@ figcaption {
         width: 80%;
 
     }
+
+
 }
