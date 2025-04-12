@@ -4,7 +4,7 @@
         "address": "123 Innovation Blvd, Silicon City",
         "phone": "555-1234",
         "website": "https://techhive.com",
-        "image": "techhive.png",
+        "image": "avatar.png",
         "membership": "Gold",
         "description": "Leading the way in AI solutions."
     },
@@ -13,7 +13,7 @@
         "address": "456 Harvest Lane, AgriTown",
         "phone": "555-5678",
         "website": "https://greenleaffarms.com",
-        "image": "",
+        "image": "avatar.png",
         "membership": "Silver",
         "description": "Organic produce and sustainable farming."
     },
@@ -22,7 +22,7 @@
         "address": "789 Creative Ave, Artsville",
         "phone": "555-9012",
         "website": "https://sparkstudios.com",
-        "image": "spark.png",
+        "image": "avatar.png",
         "membership": "Bronze",
         "description": "Multimedia design and production."
     },
@@ -31,7 +31,7 @@
         "address": "321 Solar Dr, Eco City",
         "phone": "555-3456",
         "website": "https://nextgenenergy.com",
-        "image": "nextgen.png",
+        "image": "avatar.png",
         "membership": "Gold",
         "description": "Clean, renewable energy solutions."
     },
@@ -40,7 +40,7 @@
         "address": "654 Tech Lane, Codeville",
         "phone": "555-7890",
         "website": "https://bytecraftit.com",
-        "image": "bytecraft.png",
+        "image": "avatar.png",
         "membership": "Silver",
         "description": "Enterprise IT services and support."
     },
@@ -49,7 +49,7 @@
         "address": "111 Justice Blvd, Lawtown",
         "phone": "555-2345",
         "website": "https://zenithlegal.com",
-        "image": "zenith.png",
+        "image": "avatar.png",
         "membership": "Bronze",
         "description": "Legal services for startups and entrepreneurs."
     },
@@ -58,7 +58,7 @@
         "address": "222 Garden St, Metropolis",
         "phone": "555-6789",
         "website": "https://urbanbloom.com",
-        "image": "urbanbloom.png",
+        "image": "avatar.png",
         "membership": "Gold",
         "description": "Landscape design for city spaces."
     }
