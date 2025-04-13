@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/banner.css">
     <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/banner.js"></script>
+    <script defer src="scripts/spotlight.js"></script>
+    <script defer src="scripts/weather.js"></script>
     <script defer src="scripts/hambutton.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,8 +38,7 @@
                 <li class="nav-item"><a href="index.html">Home</a></li>
                 <li class="nav-item"><a href="discover.html">Discover</a></li>
                 <li class="nav-item"><a href="directory.html">Directory</a></li>
-                <li class="nav-item"><a href="about-us.html">About Us</a></li>
-                <li class="nav-item"><a href="contact-us.html">Contact Us</a></li>
+                <li class="nav-item"><a href="aboutus.html">About Us</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -44,6 +47,8 @@
             </div>
         </nav>
     </header>
+
+    <a href="https://codepen.io/Cybermatrix-Digital-Global-Services/pen/YPzoJQM">Codpen Fork</a>
 
     <main>
         <section id="hero">
@@ -54,25 +59,32 @@
         </section>
 
         <section id="events">
-            <h2>Current Events</h2>
-            <p>Placeholder content for upcoming events.</p>
+            <div id="meet-greet-banner" class="banner hidden">
+                <p>📢 Join us for the Chamber of Commerce Meet and Greet – Wednesday at 7:00 p.m.!</p>
+                <button id="close-banner">❌</button>
+            </div>
         </section>
-        <a href="https://codepen.io/Cybermatrix-Digital-Global-Services/pen/YPzoJQM">Codpen Fork</a>
-        <section id="weather">
+
+        <section class="card">
             <h2>Current Weather</h2>
-            <p>Placeholder content for weather information.</p>
+            <div id="current-temp"></div>
+            <figure>
+                <img id="weather-icon" src="" alt="Weather Icon" />
+                <figcaption id="weather-desc"></figcaption>
+            </figure>
+            <div id="forecast">
+                <h3>3-Day Forecast</h3>
+                <ul>
+                    <li id="forecast-day1"></li>
+                    <li id="forecast-day2"></li>
+                    <li id="forecast-day3"></li>
+                </ul>
+            </div>
         </section>
 
         <section id="company-spotlights">
             <h2>Company Spotlights</h2>
-            <div class="spotlight">
-                <h3>Company 1</h3>
-                <p>Placeholder content for Company 1.</p>
-            </div>
-            <div class="spotlight">
-                <h3>Company 2</h3>
-                <p>Placeholder content for Company 2.</p>
-            </div>
+            <div id="spotlights-container"></div>
         </section>
     </main>
 

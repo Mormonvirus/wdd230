@@ -1,8 +1,3 @@
-// Visit Counter
-let visits = localStorage.getItem('visitCount');
-visits = visits ? parseInt(visits) + 1 : 1;
-localStorage.setItem('visitCount', visits);
-document.getElementById('visitCount').textContent = visits;
 
 // Weather Elements
 const currentTemp = document.querySelector('#current-temp');
